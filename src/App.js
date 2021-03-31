@@ -16,7 +16,7 @@ import Blogdetails from './Components/Blogdetails';
 
 function App() {
   return (
-    <HashRouter basename='/'>
+    <Router basename='/'>
     <Fragment>
     <Loaderfile/>
     <Header/>
@@ -29,7 +29,7 @@ function App() {
     <Footer/>
     <Gototop/>
     </Fragment>
-    </HashRouter>
+    </Router>
   );
 }
 
