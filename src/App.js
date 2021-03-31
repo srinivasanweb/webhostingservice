@@ -7,7 +7,7 @@ import Footer from './Components/Footer';
 import Gototop from './Components/Gototop';
 import Loaderfile from './Components/Loader';
 import Contact from './Components/Contact';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import { HashRouter as Router, Switch, Route} from 'react-router-dom';
 import About from './Components/About';
 import Services from './Components/Services';
 import Blog from './Components/Blog';
@@ -16,7 +16,7 @@ import Blogdetails from './Components/Blogdetails';
 
 function App() {
   return (
-    <Router>
+    <HashRouter basename='/'>
     <Fragment>
     <Loaderfile/>
     <Header/>
@@ -29,7 +29,7 @@ function App() {
     <Footer/>
     <Gototop/>
     </Fragment>
-    </Router>
+    </HashRouter>
   );
 }
 
